@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quadratic equation</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body bgcolor="yellow" >
+<a href="partfolio.html" ><button style="color:red;background-color:green;" >|HOME|</button> </a><center>
+<font color="green" ><b><h1>QUADRATIC EQUATION</h1></b></font>
+<div id="a1" >
+<h2>A<input type="text" id="aaa" placeholder="Input a" ></div>
+<div id="b2" >
+<h2>B<input type="text" id="bbb" placeholder="Input b"   ></div>
+<div id="c3" >
+<h2>C<input type="text" id="ccc" placeholder="Input c" ></div>
+
+</h2></h2></h2>
+<h3>Either</h3>
+X=<input type="text" id="x11"  readonly>
+<br>or
+<br>X=<input type="text" id="x22" readonly >
+<br><div id="an" >
+<input type="button" id="SOLVE" onclick="ans()" value="Solve"   >
+</div>
+</center>
+<script type="text/javascript">
+function ans(){
+var a=document.getElementById('aaa').value;
+var b=document.getElementById('bbb').value;
+var c=document.getElementById('ccc').value;
+var f=eval(-b);
+var g=Math.pow(b,2);
+var h=eval(4)*eval(a)*eval(c);
+var i=g-h;
+var j=Math.sqrt(i);
+var k=f+j;
+var l=eval(2)*eval(a);
+var m=k/l;
+var n=f-j;
+var o=n/l;
+var d=document.getElementById('x11').value=m;
+var e=document.getElementById('x22').value=o;
+}
+
+</script>
+</body>
+</html>
